@@ -19,7 +19,7 @@ parfor i=1:numberOfImages
         disp(i);
     end
     img = imread( strcat(path, filesep, AllImages_release{i}) );
-    Features(i,:) = extractImageFeatures(img, 5, 3);
+    Features(i,:) = extractImageFeatures(img, 45, 5);
 end
 
 disp('Evaluation');
