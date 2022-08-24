@@ -24,6 +24,7 @@ end
 
 disp('Evaluation');
 for i=1:numberOfSplits
+    rng(i);
     if(mod(i,10)==0)
         disp(i);
     end
